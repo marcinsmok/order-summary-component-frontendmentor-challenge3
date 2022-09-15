@@ -1,131 +1,146 @@
-@import url(
-    'https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap'
-);
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
 :root {
-    --PaleBlue: hsl(225,100%, 94%);
-    --BrightBlue: hsl(245, 75%, 52%);
-    --VeryPaleBlue: hsl(225, 100%, 98%);
-    --DesaturatedBlue: hsl(224, 23%, 55%);
-    --DarkBlu : hsl(223, 47%, 23%);
-    font-size: 10px;
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlu: hsl(223, 47%, 23%);
+  font-size: 10px;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Outfit', sans-serif;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./images/pattern-background-desktop.svg);
-    background-position:top;
-    background-repeat: no-repeat;
-    background-size:contain;
-    color: var(--DarkBlu);
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--VeryPaleBlue);
+  color: var(--DarkBlu);
 }
-main{
-    display:flex;
-    flex-direction: column;
-text-align: center;   
-align-items: center;
-gap:1rem;
- width:25vw;
-    height:75vh;
-    border-radius: 1.5rem;
-    background-color: white;
-    box-shadow: 0 1.8rem 1.9rem 0 rgba(0,0,0,0.17);
-
-}
-
-img{
-    width:100%;
-    max-height:25vh;
-    border-radius: 1.5rem 1.5rem 0 0;
-}
-.text-content{
- width: 80%;  
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   gap: 1rem;
+  width: 23vw;
+  height: 63vh;
+  border-radius: 1.5rem;
+  background-color: white;
+  box-shadow: 0 1.8rem 1.9rem 0 rgba(0, 0, 0, 0.17);
+}
+
+img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.text-content {
+  width: 80%;
+  gap: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 1.5rem;
+  font-weight: 700;
+}
+
+.icon {
+  height: 4rem;
+  width: 4rem;
+}
+p {
+  font-weight: 500;
+  color: var(--DesaturatedBlue);
+}
+p,
+a {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+a:hover {
+  text-decoration: none;
+}
+.annual-plan {
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--VeryPaleBlue);
+  border-radius: 1.5rem;
+}
+.annual {
+  font-weight: 900;
+  color: var(--DarkBlu);
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin: 1rem;
+}
+.change {
+  align-self: center;
+  font-weight: 700;
+}
+
+button {
+  height: 5rem;
+  width: 80%;
+  border-style: none;
+  border-radius: 1rem;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--BrightBlue);
+  color: var(--VeryPaleBlue);
+  font-weight: 900;
+  box-shadow: 0 0.8rem 1.1rem 0.4rem hsl(245deg 90% 92%);
+  margin: 2rem;
+}
+
+.proceed:hover {
+  opacity: 0.7;
+}
+
+.cancel {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--DesaturatedBlue);
+}
+
+.cancel:hover {
+  color: var(--DarkBlu);
+}
+
+.attribution {
+  font-size: 11 px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (orientation: portrait) and (max-width: 800px) {
+  body{
+    background-color: var(--PaleBlue);
+  }
     
-}
-    h1{
-    font-size:2rem;
-    margin:1.5rem;
-}
-
-.icon{
-    height:4rem;
-    width: 4rem;
-}
-p, a{
-    font-size: 1.5rem;
-    margin:.5rem;
-}
-a:hover{
-    text-decoration: none;
-}
-.annual-plan{
-    width:80%;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--VeryPaleBlue)
-}
-
-
-.change{
-    align-self: center;   
-   
-}
-
-button{
-    height: 3rem;
-    width: 80%;
-    border-style: none;
-    border-radius: .5rem;
-        align-items: center;
-        cursor: pointer;
-    background-color: var(--BrightBlue);
-    color: var(--VeryPaleBlue);
-    box-shadow: 0px 18px 19px 0px rgba(0,0,0,0.17);
-
-}
-
-
-
-    .proceed:hover{
-        background-color: var(--DesaturatedBlue);
-    }
-
-.cancel{
-    text-decoration: none;
-}
-
-.cancel:hover{
-    color:var(--DarkBlu);
-}
-
-
-
-    .attribution {
-        font-size : 11 px;
-        text-align : center;
-    }
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
-
-
-    @media (orientation:portrait) and (max-width: 800px){
-
-        main{
-     
-         width:80vw;
-        
-
-    }
+    main {
+    width: 80vw;
+    height:85vh;
+  }
 }
