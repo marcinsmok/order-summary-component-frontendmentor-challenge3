@@ -23,7 +23,10 @@ body{
     font-family: 'Outfit', sans-serif;
     align-items: center;
     justify-content: center;
-    background-color: var(--PaleBlue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:contain;
     color: var(--DarkBlu);
 }
 main{
@@ -35,7 +38,8 @@ gap:1rem;
  width:25vw;
     height:75vh;
     border-radius: 1.5rem;
-    background-color: var(--VeryPaleBlue);
+    background-color: white;
+    box-shadow: 0 1.8rem 1.9rem 0 rgba(0,0,0,0.17);
 
 }
 
@@ -53,30 +57,56 @@ img{
     font-size:2rem;
     margin:1.5rem;
 }
+
+.icon{
+    height:4rem;
+    width: 4rem;
+}
 p, a{
     font-size: 1.5rem;
     margin:.5rem;
 }
-
+a:hover{
+    text-decoration: none;
+}
 .annual-plan{
     width:80%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    background-color: var(--VeryPaleBlue)
 }
+
 
 .change{
     align-self: center;   
    
 }
 
-.proceed{
+button{
     height: 3rem;
     width: 80%;
     border-style: none;
     border-radius: .5rem;
+        align-items: center;
+        cursor: pointer;
     background-color: var(--BrightBlue);
     color: var(--VeryPaleBlue);
-    align-items: center;
+    box-shadow: 0px 18px 19px 0px rgba(0,0,0,0.17);
+
+}
+
+
+
+    .proceed:hover{
+        background-color: var(--DesaturatedBlue);
+    }
+
+.cancel{
+    text-decoration: none;
+}
+
+.cancel:hover{
+    color:var(--DarkBlu);
 }
 
 
@@ -98,3 +128,4 @@ p, a{
         
 
     }
+}
